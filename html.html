@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Course Registration System</h1>
+
+    <div id="enrollmentForm">
+        <h2>Enroll in a Course</h2>
+        <label for="studentId">Student ID:</label>
+        <input type="text" id="studentId" placeholder="Enter student ID">
+
+        <label for="courseId">Course ID:</label>
+        <input type="text" id="courseId" placeholder="Enter course ID">
+
+        <button onclick="enroll()">Enroll</button>
+    </div>
+
+    <div id="withdrawForm">
+        <h2>Withdraw from a Course</h2>
+        <label for="withdrawStudentId">Student ID:</label>
+        <input type="text" id="withdrawStudentId" placeholder="Enter student ID">
+
+        <label for="withdrawCourseId">Course ID:</label>
+        <input type="text" id="withdrawCourseId" placeholder="Enter course ID">
+
+        <button onclick="withdraw()">Withdraw</button>
+    </div>
+
+    <div id="modifyForm">
+        <h2>Modify Enrollment</h2>
+        <label for="modifyStudentId">Student ID:</label>
+        <input type="text" id="modifyStudentId" placeholder="Enter student ID">
+
+        <label for="modifyCourseId">Course ID:</label>
+        <input type="text" id="modifyCourseId" placeholder="Enter course ID">
+
+        <label for="newGrade">New Grade:</label>
+        <input type="text" id="newGrade" placeholder="Enter new grade">
+
+        <button onclick="modifyEnrollment()">Modify Enrollment</button>
+    </div>
+
+    <div id="viewEnrollment">
+        <h2>View Enrollment</h2>
+        <label for="viewStudentId">Student ID:</label>
+        <input type="text" id="viewStudentId" placeholder="Enter student ID">
+
+        <button onclick="viewEnrollment()">View Enrollment</button>
+
+        <div id="enrollmentResult"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
